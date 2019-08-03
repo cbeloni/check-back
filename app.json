@@ -1,0 +1,9 @@
+
+
+{
+  "name": "Check Back",
+  "description": "Pequena aplicação de categorização de memes.",
+  "repository": "https://github.com/cbeloni/check-back",
+  "image": "heroku/java",
+  "addons": [ "heroku-postgresql" ]
+}
