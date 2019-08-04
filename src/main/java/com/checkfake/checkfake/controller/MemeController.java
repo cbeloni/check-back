@@ -15,7 +15,7 @@ public class MemeController {
         if (false){
             throw new BadRequestMeme("Deu alguma falha!");
         }
-        return new ResponseEntity<String>("Oi ao back-end", HttpStatus.OK);
+        return new ResponseEntity<String>("Oi ao back-end!!!", HttpStatus.OK);
     }
 
 }

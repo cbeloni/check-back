@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="12ab6b61-4709-4479-a342-af570522c7cd" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/src/main/java/com/checkfake/checkfake/controller/MemeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/checkfake/checkfake/controller/MemeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/checkfake/checkfake/CheckFakeApplicationTests.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -50,7 +51,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/checkfake/checkfake/controller/MemeController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="255">
-              <caret line="17" column="57" selection-start-line="17" selection-start-column="57" selection-end-line="17" selection-end-column="57" />
+              <caret line="17" column="60" selection-start-line="17" selection-start-column="60" selection-end-line="17" selection-end-column="60" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -219,12 +220,12 @@
       <option name="presentableId" value="Default" />
       <updated>1564870056259</updated>
       <workItem from="1564870060330" duration="2760000" />
-      <workItem from="1564873032508" duration="1051000" />
+      <workItem from="1564873032508" duration="1655000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3811000" />
+    <option name="totallyTimeSpent" value="4415000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1365" y="-5" width="1922" height="1086" extended-state="6" />
@@ -321,7 +322,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/checkfake/checkfake/controller/MemeController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
-          <caret line="17" column="57" selection-start-line="17" selection-start-column="57" selection-end-line="17" selection-end-column="57" />
+          <caret line="17" column="60" selection-start-line="17" selection-start-column="60" selection-end-line="17" selection-end-column="60" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
