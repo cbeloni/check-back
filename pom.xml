@@ -42,9 +42,9 @@
 			<optional>true</optional>
 		</dependency>
 		<dependency>
-			<groupId>postgresql</groupId>
+			<groupId>org.postgresql</groupId>
 			<artifactId>postgresql</artifactId>
-			<version>9.3-1100-jdbc41</version>
+			<version>42.2.5</version>
 		</dependency>
 		<dependency>
 			<groupId>com.h2database</groupId>
