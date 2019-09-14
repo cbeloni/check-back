@@ -18,6 +18,9 @@ public class Meme {
     @Column(name="nome")
     private String nome;
 
+    @Column(name="imagem_nome")
+    private String imagemNome;
+
     @Lob
     @Column(name="imagem")
     private byte[] imagem;

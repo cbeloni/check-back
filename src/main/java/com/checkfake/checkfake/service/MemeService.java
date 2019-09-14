@@ -20,6 +20,7 @@ public class MemeService {
         try {
             Meme meme = Meme.builder().nome(memeDto.getNome())
                     .imagem(file.getBytes())
+                    .imagemNome(file.getOriginalFilename())
                     .build();
 
             return memeRepository.save(meme);
