@@ -26,4 +26,7 @@ public class MemeService {
         return memeRepository.findAll();
     }
 
+    public void remover(Meme meme){
+        memeRepository.delete(meme);
+    }
 }
