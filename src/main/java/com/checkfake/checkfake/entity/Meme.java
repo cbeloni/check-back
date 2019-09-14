@@ -26,8 +26,8 @@ public class Meme {
     @Column(name="imagem")
     private byte[] imagem;
 
-    @Column(name="fake", columnDefinition = "boolean default false")
-    private Boolean fake;
+    @Column(name="is_fake", columnDefinition = "boolean default false")
+    private Boolean isFake;
 
     @Column (name="data")
     private Date date;
