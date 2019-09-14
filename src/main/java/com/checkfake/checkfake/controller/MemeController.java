@@ -4,6 +4,7 @@ import com.checkfake.checkfake.entity.Meme;
 import com.checkfake.checkfake.exceptions.BadRequestMeme;
 import com.checkfake.checkfake.service.MemeService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -35,6 +36,12 @@ public class MemeController {
     @PostMapping("salvar")
     public Meme salvar(Meme meme){
         return memeService.salvar(meme);
+    }
+
+    @DeleteMapping("remover")
+    public String remover(Meme meme) {
+        memeService.remover(meme);
+        return "Removido com sucesso!!";
     }
 
 }
