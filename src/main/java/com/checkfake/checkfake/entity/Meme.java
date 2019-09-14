@@ -1,12 +1,13 @@
 package com.checkfake.checkfake.entity;
 
+import lombok.Builder;
 import lombok.Data;
-import lombok.Generated;
 
 import javax.persistence.*;
 
 @Entity
 @Data
+@Builder
 @Table(name="meme")
 public class Meme {
 
@@ -17,8 +18,8 @@ public class Meme {
     @Column(name="nome")
     private String nome;
 
-    //@Lob
-    @Column(name="file")
-    private String file;
+    @Lob
+    @Column(name="imagem")
+    private byte[] imagem;
 
 }
