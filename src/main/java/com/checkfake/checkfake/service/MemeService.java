@@ -22,6 +22,7 @@ public class MemeService {
             Meme meme = Meme.builder().nome(memeDto.getNome())
                     .imagem(file.getBytes())
                     .imagemNome(file.getOriginalFilename())
+                    .fake(true)
                     .date(new Date())
                     .build();
 
