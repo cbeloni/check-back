@@ -4,6 +4,7 @@ import lombok.Builder;
 import lombok.Data;
 
 import javax.persistence.*;
+import java.util.Date;
 
 @Entity
 @Data
@@ -28,4 +29,6 @@ public class Meme {
     @Column(name="fake", columnDefinition = "boolean default false")
     private Boolean fake;
 
+    @Column (name="data")
+    private Date date;
 }

@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
+import java.util.Date;
 import java.util.List;
 
 @Service
@@ -21,6 +22,7 @@ public class MemeService {
             Meme meme = Meme.builder().nome(memeDto.getNome())
                     .imagem(file.getBytes())
                     .imagemNome(file.getOriginalFilename())
+                    .date(new Date())
                     .build();
 
             return memeRepository.save(meme);
