@@ -11,13 +11,14 @@ import javax.persistence.*;
 public class Meme {
 
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
+    @Column(name="nome")
     private String nome;
 
-    @Lob
+    //@Lob
     @Column(name="file")
-    private byte[] file;
+    private String file;
 
 }
