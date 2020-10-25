@@ -5,6 +5,9 @@ import com.checkfake.checkfake.entity.Meme;
 import com.checkfake.checkfake.exceptions.BadRequestMeme;
 import com.checkfake.checkfake.repository.MemeRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
@@ -38,6 +41,10 @@ public class MemeService {
 
     public List<Meme> obterTodos(){
         return memeRepository.findAll();
+    }
+
+    public Page<Meme> obterTodos(final Pageable pageable) {
+        return memeRepository.findAll(pageable);
     }
 
     public void remover(Meme meme){
