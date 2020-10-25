@@ -44,7 +44,7 @@ public class MemeController {
         Page<Meme> meme = null;
         try{
             logger.info("Inicio listarPaginado - Params: pageNo: "+pageNo+" pageSize: "+ pageSize +", sortBy: "+sortBy+"");
-            Pageable pageable = PageRequest.of(pageNo, pageSize, Sort.by(sortBy));
+            Pageable pageable = PageRequest.of(pageNo, pageSize, Sort.by(Sort.Direction.DESC,sortBy));
             meme =  memeService.obterTodos(pageable);
             return meme;
         } catch (Exception ex){
